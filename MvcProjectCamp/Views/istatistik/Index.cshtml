@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+
+<div class="row">
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-info">
+
+
+            <div class="info-box-content text-center">
+                <span class="info-box-text">Toplam Kategori Sayısı</span>
+
+
+                <div class="progress">
+
+                </div>
+                <span class="progress-description">
+                    @ViewBag.totalCategory
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-success">
+            <div class="info-box-content text-center">
+                <span class="info-box-text">Yazılım Kategorisinde Başlık Sayısı</span>
+
+                <div class="progress">
+
+                </div>
+                <span class="progress-description">
+                    @ViewBag.totalHeading
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-warning">
+
+            <div class="info-box-content text-center">
+                <span class="info-box-text">a Harfi Geçen Yazar Sayısı</span>
+
+
+                <div class="progress">
+
+                </div>
+                <span class="progress-description">
+                    @ViewBag.atotalWriter
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-danger">
+            <div class="info-box-content text-center">
+                <span class="info-box-text">En Fazla Başlığa Sahip Kategori Adı</span>
+
+                <div class="progress">
+                </div>
+                <span class="progress-description">
+                    @ViewBag.totalHeadingtoCategory
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-danger">
+            <div class="info-box-content text-center">
+                <span class="info-box-text">Sayısal Fark</span>
+
+                <div class="progress">
+                </div>
+                <span class="progress-description">
+                    @ViewBag.fark
+                </span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+</div>
+
